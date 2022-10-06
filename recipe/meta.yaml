@@ -1,6 +1,6 @@
 {% set name = "pyftpdlib" %}
-{% set version = "1.5.6" %}
-{% set sha256 = "a45cf7d4c46320e31fa4b4f3e6afc7111c0307bfcd7aa477cf902324b92f4d38" %}
+{% set version = "1.5.7" %}
+{% set sha256 = "6ec561fb77f377e92e8539d3d331c1c0375b0aee07f77b52d4e3ef33e543c9ef" %}
 
 package:
   name: {{ name|lower }}
@@ -21,11 +21,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
     - setuptools
     - pyopenssl
   run:
-    - python
+    - python >=2.7
     - pyopenssl
 
 test:
@@ -43,7 +43,7 @@ about:
   home: https://github.com/giampaolo/pyftpdlib
   license: MIT
   license_file: LICENSE
-  summary: 'pyftpdlib is a high-level library to easily write asynchronous portable FTP servers with Python.'
+  summary: pyftpdlib is a high-level library to easily write asynchronous portable FTP servers with Python.
   description: |
     Python FTP server library provides a high-level portable interface to easily
     write very efficient, scalable and asynchronous FTP servers with Python. It
