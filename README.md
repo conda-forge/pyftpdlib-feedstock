@@ -1,11 +1,11 @@
-About pyftpdlib
-===============
+About pyftpdlib-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyftpdlib-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/giampaolo/pyftpdlib
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyftpdlib-feedstock/blob/main/LICENSE.txt)
 
 Summary: pyftpdlib is a high-level library to easily write asynchronous portable FTP servers with Python.
 
