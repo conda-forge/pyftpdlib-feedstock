@@ -1,6 +1,6 @@
 {% set name = "pyftpdlib" %}
-{% set version = "1.5.8" %}
-{% set sha256 = "f3ce2d613474c8ab43df0b961d3201b3eb03f8b4082b48cd720a6d5cffba989d" %}
+{% set version = "1.5.9" %}
+{% set sha256 = "7403b762ea16e4c1e5805b81084c09cd099ba6a8f7dbbcaf3e331a889ea883fe" %}
 
 package:
   name: {{ name|lower }}
