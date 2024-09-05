@@ -26,8 +26,8 @@ requirements:
     - pyopenssl
   run:
     - python >=3
-    - pyasyncore  # [py>=312]
-    - pyasynchat  # [py>=312]
+    - pyasyncore
+    - pyasynchat
     - pyopenssl
 
 test:
