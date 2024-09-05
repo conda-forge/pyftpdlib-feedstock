@@ -21,11 +21,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3
     - setuptools
     - pyopenssl
   run:
-    - python >=2.7
+    - python >=3
+    - pyasyncore  # [py>=312]
+    - pyasynchat  # [py>=312]
     - pyopenssl
 
 test:
