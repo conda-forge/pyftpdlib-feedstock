@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pyftpdlib = clcache:main
@@ -21,14 +21,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python {{ python_min }}
     - setuptools
     - pyopenssl
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - pyopenssl
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyftpdlib
     - pyftpdlib.authorizers
