@@ -1,6 +1,6 @@
 {% set name = "pyftpdlib" %}
-{% set version = "1.5.10" %}
-{% set sha256 = "993a48b652c0a2ab9af898fd3acbe422e8558ba91d1451eec20db2584a0178de" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "22ef6dc8fa4a8ca66c4de413721239ed0dfb4d7b7a8ee26f40ebf084bbfd1532" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pyftpdlib = clcache:main
