@@ -15,18 +15,14 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  entry_points:
-    - pyftpdlib = clcache:main
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
     - setuptools
-    - pyopenssl
   run:
     - python >={{ python_min }}
-    - pyopenssl
 
 test:
   requires:
@@ -34,10 +30,11 @@ test:
   imports:
     - pyftpdlib
     - pyftpdlib.authorizers
+    - pyftpdlib.exceptions
     - pyftpdlib.handlers
     - pyftpdlib.filesystems
-    - pyftpdlib.servers
     - pyftpdlib.ioloop
+    - pyftpdlib.servers
   commands:
     - python -m pyftpdlib --help
 
